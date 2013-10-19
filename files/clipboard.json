@@ -1,4 +1,5 @@
 {
+  "title":"Clipboard API",
   "description":"API to provide copy, cut and paste functionality using the OS clipboard.",
   "spec":"http://www.w3.org/TR/clipboard-apis/",
   "status":"wd",

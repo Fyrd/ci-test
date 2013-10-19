@@ -7,12 +7,15 @@ var processFile = function(error, data) {
         throw Error('Error: ' + error);
     }
     data = JSON.parse(data);
+
     if( !("title" in data) ) {
         throw Error("No title");
-    }   
+    }
 };
 
 for( var i = 0; i < files.length; i++ ) {
     var file = files[i];
-    fs.readFile(path + '/' + file, 'utf8', processFile);
+    if( file.indexOf('.json') > -1 ) {
+        fs.readFile(path + '/' + file, 'utf8', processFile);
+    }
 }
