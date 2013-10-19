@@ -1,8 +1,4 @@
 language: node_js
 node_js:
   - 0.6
-  
-before_script:
-  - npm install -g grunt
-  - npm install -g grunt-cli
-script: grunt test --verbose --force
+script: node test/validate-jsons.js

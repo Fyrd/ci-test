@@ -1,3 +1,1 @@
-test( "hello test", function() {
-    ok( 1 == "1", "Passed!" );
-});
+var x = 1;
